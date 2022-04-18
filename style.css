@@ -1,176 +1,233 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 :after,
 :before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #8B8B8B;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #8b8b8b;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 h1 {
-    font-size: 28px;
-    font-weight: medium;
-    color: black;
-    margin-top: 40px;
-    margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: medium;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .line {
-    display: block;
-    border-bottom: 2px solid #407BFF;
-    width: 60px;
-    margin: 0 auto;
+  display: block;
+  border-bottom: 2px solid #407bff;
+  width: 60px;
+  margin: 0 auto;
 }
 
 h2 {
-    font-size: 16px;
-    font-weight: medium;
-    color: black;
-
+  font-size: 16px;
+  font-weight: medium;
+  color: black;
 }
 
 .obsah {
-    margin: 0 auto;
-    background-color: #FAFAFA;
-    padding: 60px 20px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 60px 20px;
 }
 
-
 .obrazek {
-    display: block;
-    margin: 0 auto;
+  background-image: url(./images/happy-traveler_zmenseny.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 290px;
 }
 
 .tlacitka {
-    margin: 30px 0 60px 0;
+  margin: 30px 0 60px 0;
 }
 
 .tlacitko {
-    border-radius: 20px;
-    border: none;
-    color: white;
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px 30px;
-    margin: 10px auto;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 30px;
+  margin: 10px auto;
 }
 
 .modre {
-    background-color: #407BFF;
+  background-color: #407bff;
 }
 
 .sede {
-    background-color: #8B8B8B;
+  background-color: #8b8b8b;
 }
 
 .sluzby {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .nabidka {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .karta {
-    display: flex;
-    background-color: #FFFFFF;
-    margin-bottom: 15px;
-    font-size: 13px;
-    font-weight: 300;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px #407BFF1F;
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 300;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #407bff1f;
 }
 
 .karta img {
-    padding: 20px;
+  padding: 20px;
 }
-
 
 /*----------------- Tablet 640px a víc --------------------*/
 @media screen and (min-width: 640px) {
+  .obsah {
+    padding: 60px 20px;
+  }
 
-    .obsah {
-        padding: 60px 20px;
-    }
+  .obrazek {
+    background-image: url(./images/happy-traveler.svg);
+    height: 332px;
+  }
 
-    .tlacitka {
-        display: flex;
-        justify-content: center;
-    }
+  .tlacitka {
+    display: flex;
+    justify-content: center;
+  }
 
-    .tlacitko {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+  .tlacitko {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-    .karta {
-        flex-direction: column;
-    }
+  .karta {
+    flex-direction: column;
+  }
 
-    .nabidka {
-        display: flex;
-        flex: 1 1 calc(100% / 3);
-        gap: 20px;
-    }
+  .nabidka {
+    display: flex;
+    flex: 1 1 calc(100% / 3);
+    gap: 20px;
+  }
 
-    .karta img {
-        padding: 40px 0 0 0;
-    }
+  .karta img {
+    padding: 40px 0 0 0;
+  }
 
-    .karta p {
-        padding: 20px 15px 40px 15px;
-        margin: 0;
-    }
+  .karta p {
+    padding: 20px 15px 40px 15px;
+    margin: 0;
+  }
 
-    p {
-        padding: 0 110px;
-    }
-
+  p {
+    padding: 0 110px;
+  }
 }
 
 /*----------------- Desktop 1100px a víc --------------------*/
 @media screen and (min-width: 1100px) {
-    .hero {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
+  .obsah {
+    max-width: 1200px;
+    padding: 60px 80px;
+  }
 
-    .obrazek {
-        max-width: 425px;
-    }
+  .hero {
+    max-width: 500px;
+  }
 
-    h1 {
-        text-align: left;
-    }
+  .obrazek {
+    width: 425px;
+  }
 
-    h2 {
-        text-align: left;
-    }
+  .sekce {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 80px;
+    align-items: center;
+    gap: 60px;
+  }
 
-    p {
-        text-align: left;
-        padding: 0;
-    }
+  .prvni {
+    justify-content: space-between;
+  }
 
-    .line {
-        margin: 0;  
-    }
+  .treti {
+    flex-direction: row;
+  }
 
+  h1,
+  h2,
+  p {
+    text-align: left;
+    padding: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .hero p {
+    margin: 30px 0;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .line {
+    margin: 0;
+  }
+
+  .tlacitka {
+    justify-content: left;
+  }
+
+  .modre {
+    margin: 0 10px 0 0;
+  }
+
+  .sede {
+    margin: 0 0 0 10px;
+  }
+
+  .sluzby {
+    max-width: 430px;
+    margin: 0;
+  }
+
+  .sluzby p {
+    margin-bottom: 0;
+  }
+
+  .nabidka {
+    max-width: 550px;
+    margin: 0;
+  }
+
+  .karta p {
+    text-align: center;
+  }
 }
